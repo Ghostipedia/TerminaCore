@@ -10,6 +10,8 @@ public class TFCMetalMaterial {
 
     public static void setTFCMetalProperty() {
         GTMaterials.Aluminium.setProperty(TFC_METAL_PROPERTY,
-                new TFCMetalProperty(TFCTiers.WROUGHT_IRON.getLevel(), 1039, 823, 1243, GTMaterials.Iron));
+                new TFCMetalProperty(TFCTiers.WROUGHT_IRON.getLevel(), 1039, 823, 1243, GTMaterials.Aluminium));
+        GTMaterials.Iron.setProperty(TFC_METAL_PROPERTY,
+                new TFCMetalProperty(TFCTiers.WROUGHT_IRON.getLevel(), 950, 823, 1100, GTMaterials.Iron));
     }
 }
