@@ -14,5 +14,4 @@ public class TerminaCoreDatagen {
         TerminaRegistration.REGISTRATE.addDataGenerator(ProviderType.ENTITY_TAGS, TerminaTagsHandler::initEntity);
         TerminaRegistration.REGISTRATE.addDataGenerator(ProviderType.LANG, TerminaLangHandler::init);
     }
-
 }

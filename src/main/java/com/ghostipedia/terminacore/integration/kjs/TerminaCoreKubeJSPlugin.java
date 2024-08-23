@@ -1,5 +1,6 @@
 package com.ghostipedia.terminacore.integration.kjs;
 
+import com.gregtechceu.gtceu.api.registry.GTRegistries;
 
 import com.ghostipedia.terminacore.TerminaCore;
 import com.ghostipedia.terminacore.common.data.TerminaBlocks;
@@ -9,7 +10,6 @@ import com.ghostipedia.terminacore.common.data.materials.TerminaElements;
 import com.ghostipedia.terminacore.common.data.materials.TerminaMaterials;
 import com.ghostipedia.terminacore.gtbridge.TerminaRecipeTypes;
 import com.ghostipedia.terminacore.integration.kjs.recipe.TerminaCoreRecipeSchema;
-import com.gregtechceu.gtceu.api.registry.GTRegistries;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.recipe.schema.RecipeComponentFactoryRegistryEvent;
 import dev.latvian.mods.kubejs.recipe.schema.RegisterRecipeSchemasEvent;
@@ -44,8 +44,7 @@ public class TerminaCoreKubeJSPlugin extends KubeJSPlugin {
     }
 
     @Override
-    public void registerRecipeComponents(RecipeComponentFactoryRegistryEvent event) {
-    }
+    public void registerRecipeComponents(RecipeComponentFactoryRegistryEvent event) {}
 
     @Override
     public void registerBindings(BindingsEvent event) {

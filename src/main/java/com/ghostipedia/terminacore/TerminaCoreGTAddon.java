@@ -1,5 +1,11 @@
 package com.ghostipedia.terminacore;
 
+import com.gregtechceu.gtceu.api.addon.GTAddon;
+import com.gregtechceu.gtceu.api.addon.IGTAddon;
+import com.gregtechceu.gtceu.api.addon.events.KJSRecipeKeyEvent;
+import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
+
+import net.minecraft.data.recipes.FinishedRecipe;
 
 import com.ghostipedia.terminacore.api.capability.recipe.TerminaRecipeCapabilities;
 import com.ghostipedia.terminacore.api.data.TerminaCoreMaterialIconType;
@@ -7,13 +13,8 @@ import com.ghostipedia.terminacore.api.data.TerminaCoreTagPrefix;
 import com.ghostipedia.terminacore.api.registries.TerminaRegistration;
 import com.ghostipedia.terminacore.common.data.materials.TerminaElements;
 import com.ghostipedia.terminacore.common.data.recipe.TerminaCoreOreRecipeHandler;
-import com.ghostipedia.terminacore.gtbridge.TerminaRecipeTypes;
 import com.ghostipedia.terminacore.gtbridge.TerminaCoreRecipes;
-import com.gregtechceu.gtceu.api.addon.GTAddon;
-import com.gregtechceu.gtceu.api.addon.IGTAddon;
-import com.gregtechceu.gtceu.api.addon.events.KJSRecipeKeyEvent;
-import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
-import net.minecraft.data.recipes.FinishedRecipe;
+import com.ghostipedia.terminacore.gtbridge.TerminaRecipeTypes;
 
 import java.util.function.Consumer;
 
@@ -60,6 +61,5 @@ public class TerminaCoreGTAddon implements IGTAddon {
     }
 
     @Override
-    public void registerRecipeKeys(KJSRecipeKeyEvent event) {
-    }
+    public void registerRecipeKeys(KJSRecipeKeyEvent event) {}
 }

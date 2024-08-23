@@ -10,6 +10,4 @@ public class TerminaCoilBlockEntity extends BlockEntity {
     public TerminaCoilBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState blockState) {
         super(type, pos, blockState);
     }
-
-
 }

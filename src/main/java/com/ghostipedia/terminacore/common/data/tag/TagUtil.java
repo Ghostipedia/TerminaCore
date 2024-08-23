@@ -1,4 +1,5 @@
 package com.ghostipedia.terminacore.common.data.tag;
+
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -7,9 +8,11 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
+
 import com.ghostipedia.terminacore.TerminaCore;
 
 public class TagUtil {
+
     public static <T> TagKey<T> optionalTag(ResourceKey<? extends Registry<T>> registry, ResourceLocation id) {
         return TagKey.create(registry, id);
     }
@@ -54,5 +57,4 @@ public class TagUtil {
     public static TagKey<Fluid> createModFluidTag(String path) {
         return createModTag(Registries.FLUID, path);
     }
-
 }
