@@ -1,11 +1,11 @@
 {
   "values": [
-    "cosmiccore:space_nanomuscle_chestplate",
-    "cosmiccore:space_advanced_nanomuscle_chestplate",
-    "cosmiccore:space_quarktech_chestplate",
-    "cosmiccore:space_advanced_quarktech_chestplate",
-    "cosmiccore:vomahine_warptech_chestplate",
-    "cosmiccore:vomahine_warptech_gravplate",
+    "terminacore:space_nanomuscle_chestplate",
+    "terminacore:space_advanced_nanomuscle_chestplate",
+    "terminacore:space_quarktech_chestplate",
+    "terminacore:space_advanced_quarktech_chestplate",
+    "terminacore:vomahine_warptech_chestplate",
+    "terminacore:vomahine_warptech_gravplate",
     "gtceu:nanomuscle_helmet",
     "gtceu:nanomuscle_leggings",
     "gtceu:nanomuscle_boots",

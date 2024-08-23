@@ -1,9 +1,0 @@
-{
-    "ldlib": {
-        "connection": "cosmiccore:block/casings/coils/psionic_galvorn_bloom_ctm",
-        "emissive": true
-    },
-    "shimmer": {
-        "bloom": true
-    }
-}

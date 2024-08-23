@@ -1,13 +1,13 @@
 package com.ghostipedia.terminacore;
 
-import com.ghostipedia.terminacore.api.pattern.CosmicPredicates;
-import com.ghostipedia.terminacore.api.registries.CosmicRegistration;
-import com.ghostipedia.terminacore.api.capability.CosmicCapabilities;
-import com.ghostipedia.terminacore.client.CosmicCoreClient;
+import com.ghostipedia.terminacore.api.pattern.TerminaPredicates;
+import com.ghostipedia.terminacore.api.registries.TerminaRegistration;
+import com.ghostipedia.terminacore.api.capability.TerminaCapabilities;
+import com.ghostipedia.terminacore.client.TerminaCoreClient;
 import com.ghostipedia.terminacore.common.data.*;
-import com.ghostipedia.terminacore.common.data.materials.CosmicMaterialSet;
-import com.ghostipedia.terminacore.common.data.materials.CosmicMaterials;
-import com.ghostipedia.terminacore.gtbridge.CosmicRecipeTypes;
+import com.ghostipedia.terminacore.common.data.materials.TerminaMaterialSet;
+import com.ghostipedia.terminacore.common.data.materials.TerminaMaterials;
+import com.ghostipedia.terminacore.gtbridge.TerminaRecipeTypes;
 import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialEvent;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialRegistryEvent;
@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
 
 @Mod(TerminaCore.MOD_ID)
 public class TerminaCore {
-    public static final String MOD_ID = "cosmiccore", NAME = "CosmicCore";
+    public static final String MOD_ID = "terminacore", NAME = "TerminaCore";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
     public static MaterialRegistry MATERIAL_REGISTRY;
 
@@ -44,20 +44,20 @@ public class TerminaCore {
         bus.addGenericListener(MachineDefinition.class, this::registerMachines);
 
         if (Platform.isClient()) {
-            bus.register(CosmicCoreClient.class);
+            bus.register(TerminaCoreClient.class);
         }
     }
 
     public static void init() {
         ConfigHolder.init();
-        CosmicCreativeModeTabs.init();
-        CosmicBlocks.init();
-        CosmicBlockEntities.init();
-        CosmicItems.init();
-        CosmicRegistration.REGISTRATE.registerRegistrate();
-        CosmicCoreDatagen.init();
-        CosmicPredicates.init();
-        CosmicMaterialSet.init();
+        TerminaCreativeModeTabs.init();
+        TerminaBlocks.init();
+        TerminaBlockEntities.init();
+        TerminaItems.init();
+        TerminaRegistration.REGISTRATE.registerRegistrate();
+        TerminaCoreDatagen.init();
+        TerminaPredicates.init();
+        TerminaMaterialSet.init();
     }
 
     public static ResourceLocation id(String path) {
@@ -71,7 +71,7 @@ public class TerminaCore {
 
     @SubscribeEvent
     public void registerMaterials(MaterialEvent event) {
-        CosmicMaterials.register();
+        TerminaMaterials.register();
     }
 
     @SubscribeEvent
@@ -85,15 +85,15 @@ public class TerminaCore {
     }
 
     public void registerRecipeTypes(GTCEuAPI.RegisterEvent<ResourceLocation, GTRecipeType> event) {
-        CosmicRecipeTypes.init();
+        TerminaRecipeTypes.init();
     }
 
     public void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
-        CosmicMachines.init();
+        TerminaMachines.init();
     }
 
     @SubscribeEvent
     public void registerCapabilities(RegisterCapabilitiesEvent event) {
-        CosmicCapabilities.register(event);
+        TerminaCapabilities.register(event);
     }
 }

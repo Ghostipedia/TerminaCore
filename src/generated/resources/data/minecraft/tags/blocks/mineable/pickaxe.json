@@ -1,20 +1,20 @@
 {
   "values": [
-    "cosmiccore:prismatic_tungstensteel_coil_block",
-    "cosmiccore:resonant_virtue_meld_coil_block",
-    "cosmiccore:naquadric_superalloy_coil_block",
-    "cosmiccore:reinforced_trinavine_coil_block",
-    "cosmiccore:psionic_galvorn_coil_block",
-    "cosmiccore:living_igniclad_coil_block",
-    "cosmiccore:programable_matter_coil_block",
-    "cosmiccore:shimmering_neutronium_coil_block",
-    "cosmiccore:causal_fabric_coil_block",
-    "cosmiccore:dyson_solar_cell",
-    "cosmiccore:naquadah_pressure_resistant_casing",
-    "cosmiccore:resonantly_tuned_virtue_meld_casing",
-    "cosmiccore:alternator_flux_coiling",
-    "cosmiccore:plated_aerocloud",
-    "cosmiccore:high_powered_magnet",
-    "cosmiccore:fusion_grade_magnet"
+    "terminacore:prismatic_tungstensteel_coil_block",
+    "terminacore:resonant_virtue_meld_coil_block",
+    "terminacore:naquadric_superalloy_coil_block",
+    "terminacore:reinforced_trinavine_coil_block",
+    "terminacore:psionic_galvorn_coil_block",
+    "terminacore:living_igniclad_coil_block",
+    "terminacore:programable_matter_coil_block",
+    "terminacore:shimmering_neutronium_coil_block",
+    "terminacore:causal_fabric_coil_block",
+    "terminacore:dyson_solar_cell",
+    "terminacore:naquadah_pressure_resistant_casing",
+    "terminacore:resonantly_tuned_virtue_meld_casing",
+    "terminacore:alternator_flux_coiling",
+    "terminacore:plated_aerocloud",
+    "terminacore:high_powered_magnet",
+    "terminacore:fusion_grade_magnet"
   ]
 }

@@ -2,7 +2,7 @@ package com.ghostipedia.terminacore.common.block;
 
 import com.ghostipedia.terminacore.TerminaCore;
 import com.ghostipedia.terminacore.api.block.IMagnetType;
-import com.ghostipedia.terminacore.common.data.materials.CosmicMaterials;
+import com.ghostipedia.terminacore.common.data.materials.TerminaMaterials;
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.block.ActiveBlock;
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
@@ -37,18 +37,18 @@ public class MagnetBlock extends ActiveBlock {
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
         super.appendHoverText(stack, level, tooltip, flag);
         if (GTUtil.isShiftDown()) {
-            tooltip.add(Component.translatable("cosmiccore.wire_coil.magnet_stats"));
-            tooltip.add(Component.translatable("cosmiccore.wire_coil.magnet_capacity", magnetBlock.getMagnetFieldCapacity()));
-            tooltip.add(Component.translatable("cosmiccore.wire_coil.magnet_regen", magnetBlock.getMagnetRegenRate()));
-            tooltip.add(Component.translatable("cosmiccore.wire_coil.eu_multiplier",  magnetBlock.energyConsumption()));
+            tooltip.add(Component.translatable("terminacore.wire_coil.magnet_stats"));
+            tooltip.add(Component.translatable("terminacore.wire_coil.magnet_capacity", magnetBlock.getMagnetFieldCapacity()));
+            tooltip.add(Component.translatable("terminacore.wire_coil.magnet_regen", magnetBlock.getMagnetRegenRate()));
+            tooltip.add(Component.translatable("terminacore.wire_coil.eu_multiplier",  magnetBlock.energyConsumption()));
 
         } else {
             tooltip.add(Component.translatable("block.gtceu.wire_coil.tooltip_extended_info"));
         }
     }
     public enum MagnetType implements StringRepresentable, IMagnetType{
-        HIGH_POWERED("high_powered",15000,10,3, CosmicMaterials.LivingIgniclad, TerminaCore.id("block/casings/solid/alternator_flux_coiling_copper")),
-        FUSION_GRADE("fusion_grade",100000,500,8192, CosmicMaterials.LivingIgniclad, TerminaCore.id("block/casings/solid/magnet_fusion_grade"));
+        HIGH_POWERED("high_powered",15000,10,3, TerminaMaterials.LivingIgniclad, TerminaCore.id("block/casings/solid/alternator_flux_coiling_copper")),
+        FUSION_GRADE("fusion_grade",100000,500,8192, TerminaMaterials.LivingIgniclad, TerminaCore.id("block/casings/solid/magnet_fusion_grade"));
 
         @NotNull @Getter
         private final String name;

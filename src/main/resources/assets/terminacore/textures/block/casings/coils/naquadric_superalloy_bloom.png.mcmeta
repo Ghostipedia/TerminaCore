@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "terminacore:block/casings/coils/naquadric_superalloy_bloom_ctm",
+        "emissive": true
+    },
+    "shimmer": {
+        "bloom": true
+    }
+}

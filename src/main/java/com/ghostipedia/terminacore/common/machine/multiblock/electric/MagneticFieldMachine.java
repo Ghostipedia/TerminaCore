@@ -148,10 +148,10 @@ public class MagneticFieldMachine extends MagnetWorkableElectricMultiblockMachin
     public void addDisplayText(List<Component> textList) {
         super.addDisplayText(textList);
         if (isFormed) {
-            textList.add(Component.translatable("cosmiccore.multiblock.current_field_strength", fieldStrength));
-            textList.add(Component.translatable("cosmiccore.multiblock.magnetic_field_strength",
+            textList.add(Component.translatable("terminacore.multiblock.current_field_strength", fieldStrength));
+            textList.add(Component.translatable("terminacore.multiblock.magnetic_field_strength",
                     Component.translatable(FormattingUtil.formatNumbers(this.getMagnetType().getMagnetFieldCapacity())).setStyle(Style.EMPTY.withColor(ChatFormatting.GOLD))));
-            textList.add(Component.translatable("cosmiccore.multiblock.magnetic_regen",
+            textList.add(Component.translatable("terminacore.multiblock.magnetic_regen",
                     Component.translatable(FormattingUtil.formatNumbers(this.getMagnetType().getMagnetRegenRate())).setStyle(Style.EMPTY.withColor(ChatFormatting.GOLD))));
         }
 
