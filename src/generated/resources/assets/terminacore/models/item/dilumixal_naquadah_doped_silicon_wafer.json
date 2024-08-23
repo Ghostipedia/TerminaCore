@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "terminacore:item/dilumixal_naquadah_doped_silicon_wafer"
+  }
+}
