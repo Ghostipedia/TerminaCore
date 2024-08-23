@@ -1,7 +1,7 @@
 package com.ghostipedia.terminacore.client.renderer.block;
 
 import com.ghostipedia.terminacore.TerminaCore;
-import com.ghostipedia.terminacore.client.renderer.CosmicCoreRenderTypes;
+import com.ghostipedia.terminacore.client.renderer.TerminaCoreRenderTypes;
 import com.gregtechceu.gtceu.api.GTValues;
 import com.gregtechceu.gtceu.client.renderer.block.TextureOverrideRenderer;
 import com.lowdragmc.lowdraglib.LDLib;
@@ -102,7 +102,7 @@ public class NebulaeCoilRenderer extends TextureOverrideRenderer {
                     1.0F, 1.0F, 0.0F,
                     Direction.EAST);
         } else {
-            VertexConsumer consumer = buffer.getBuffer(CosmicCoreRenderTypes.nebulae());
+            VertexConsumer consumer = buffer.getBuffer(TerminaCoreRenderTypes.nebulae());
 
             this.renderFace(blockEntity, pose, consumer, 0.0F, 1.0F, 0.0F, 1.0F, 1.0F, 1.0F, 1.0F, 1.0F, Direction.SOUTH);
             this.renderFace(blockEntity, pose, consumer, 0.0F, 1.0F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, Direction.NORTH);

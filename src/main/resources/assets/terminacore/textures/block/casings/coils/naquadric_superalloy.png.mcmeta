@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "terminacore:block/casings/coils/naquadric_superalloy_ctm"
+    },
+    "animation":{
+      "interpolate": true,
+      "frametime":16
+   }
+}

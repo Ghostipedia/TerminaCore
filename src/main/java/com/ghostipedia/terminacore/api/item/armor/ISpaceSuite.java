@@ -1,6 +1,6 @@
 package com.ghostipedia.terminacore.api.item.armor;
 
-import com.ghostipedia.terminacore.common.data.tag.item.CosmicItemTags;
+import com.ghostipedia.terminacore.common.data.tag.item.TerminaItemTags;
 import earth.terrarium.adastra.api.systems.OxygenApi;
 import earth.terrarium.adastra.common.constants.ConstantComponents;
 import earth.terrarium.adastra.common.registry.ModFluids;
@@ -37,11 +37,11 @@ public interface ISpaceSuite {
     }
 
     static boolean hasFullNanoSet(LivingEntity entity) {
-        return hasFullSet(entity, CosmicItemTags.NANOMUSCLE_SPACE_SUITE);
+        return hasFullSet(entity, TerminaItemTags.NANOMUSCLE_SPACE_SUITE);
     }
 
     static boolean hasFullQuantumSet(LivingEntity entity) {
-        return hasFullSet(entity, CosmicItemTags.QUARKTECH_SPACE_SUITE);
+        return hasFullSet(entity, TerminaItemTags.QUARKTECH_SPACE_SUITE);
     }
 
     static boolean hasFullSet(LivingEntity entity, TagKey<Item> tagKey) {

@@ -1,9 +1,0 @@
-{
-    "ldlib": {
-        "connection": "cosmiccore:block/casings/coils/programable_matter_bloom_ctm",
-        "emissive": true
-    },
-    "shimmer": {
-        "bloom": true
-    }
-}

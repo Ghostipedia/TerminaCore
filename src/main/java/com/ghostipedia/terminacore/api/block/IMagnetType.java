@@ -1,6 +1,6 @@
 package com.ghostipedia.terminacore.api.block;
 
-import com.ghostipedia.terminacore.api.CosmicCoreAPI;
+import com.ghostipedia.terminacore.api.TerminaCoreAPI;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -39,7 +39,7 @@ public interface IMagnetType {
      * @return the {@link ResourceLocation} defining the base texture of the magnet
      */
     ResourceLocation getTexture();
-    IMagnetType[] ALL_MAGNETS_CAPACITY_SORTED = CosmicCoreAPI.MAGNET_COILS.keySet().stream()
+    IMagnetType[] ALL_MAGNETS_CAPACITY_SORTED = TerminaCoreAPI.MAGNET_COILS.keySet().stream()
             .sorted(Comparator.comparing(IMagnetType::getMagnetFieldCapacity))
             .toArray(IMagnetType[]::new);
 

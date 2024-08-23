@@ -2,18 +2,17 @@ package com.ghostipedia.terminacore;
 
 
 import com.ghostipedia.terminacore.api.capability.recipe.TerminaRecipeCapabilities;
-import com.ghostipedia.terminacore.api.data.CosmicCoreMaterialIconType;
-import com.ghostipedia.terminacore.api.data.CosmicCoreTagPrefix;
-import com.ghostipedia.terminacore.api.registries.CosmicRegistration;
-import com.ghostipedia.terminacore.common.data.materials.CosmicElements;
-import com.ghostipedia.terminacore.common.data.recipe.CosmicCoreOreRecipeHandler;
-import com.ghostipedia.terminacore.gtbridge.CosmicRecipeTypes;
-import com.ghostipedia.terminacore.gtbridge.CosmicCoreRecipes;
+import com.ghostipedia.terminacore.api.data.TerminaCoreMaterialIconType;
+import com.ghostipedia.terminacore.api.data.TerminaCoreTagPrefix;
+import com.ghostipedia.terminacore.api.registries.TerminaRegistration;
+import com.ghostipedia.terminacore.common.data.materials.TerminaElements;
+import com.ghostipedia.terminacore.common.data.recipe.TerminaCoreOreRecipeHandler;
+import com.ghostipedia.terminacore.gtbridge.TerminaRecipeTypes;
+import com.ghostipedia.terminacore.gtbridge.TerminaCoreRecipes;
 import com.gregtechceu.gtceu.api.addon.GTAddon;
 import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import com.gregtechceu.gtceu.api.addon.events.KJSRecipeKeyEvent;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
-import com.mojang.datafixers.util.Pair;
 import net.minecraft.data.recipes.FinishedRecipe;
 
 import java.util.function.Consumer;
@@ -23,24 +22,24 @@ public class TerminaCoreGTAddon implements IGTAddon {
 
     @Override
     public GTRegistrate getRegistrate() {
-        return CosmicRegistration.REGISTRATE;
+        return TerminaRegistration.REGISTRATE;
     }
 
     @Override
     public void registerTagPrefixes() {
-        CosmicCoreMaterialIconType.init();
-        CosmicCoreTagPrefix.initTagPrefixes();
+        TerminaCoreMaterialIconType.init();
+        TerminaCoreTagPrefix.initTagPrefixes();
     }
 
     @Override
     public void initializeAddon() {
-        TerminaCore.LOGGER.info("CosmicCoreGTAddon has loaded!");
+        TerminaCore.LOGGER.info("TerminaCoreGTAddon has loaded!");
     }
 
     @Override
     public void registerElements() {
         IGTAddon.super.registerElements();
-        CosmicElements.init();
+        TerminaElements.init();
     }
 
     @Override
@@ -50,9 +49,9 @@ public class TerminaCoreGTAddon implements IGTAddon {
 
     @Override
     public void addRecipes(Consumer<FinishedRecipe> provider) {
-        CosmicRecipeTypes.init();
-        CosmicCoreRecipes.init(provider);
-        CosmicCoreOreRecipeHandler.init(provider);
+        TerminaRecipeTypes.init();
+        TerminaCoreRecipes.init(provider);
+        TerminaCoreOreRecipeHandler.init(provider);
     }
 
     @Override

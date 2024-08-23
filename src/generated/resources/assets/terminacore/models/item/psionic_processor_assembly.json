@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "terminacore:item/psionic_processor_assembly"
+  }
+}

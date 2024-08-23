@@ -57,7 +57,7 @@ jobs:
           github-tag: "${{ steps.properties.outputs.minecraft_version }}-${{ steps.properties.outputs.mod_version }}"
 
           files: ./build/libs/!(*-@(dev|sources|dev-shadow)).jar
-          name: "Cosmic Core ${{ steps.properties.outputs.mod_version }}"
+          name: "Termina Core ${{ steps.properties.outputs.mod_version }}"
           version: ${{ steps.properties.outputs.mod_version }}
           version-type: ${{ inputs.version_type }}
           changelog-file: changelog.md
