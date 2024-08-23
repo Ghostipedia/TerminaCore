@@ -88,6 +88,13 @@ dependencies {
     modImplementation("curse.maven:puzzles-lib-495476:4924184")
 
 
+    modImplementation("curse.maven:terrafirmacraft-302973:5571484")
+    modApi("curse.maven:terrafirmacraft-302973:5571484")
+    modImplementation("curse.maven:patchouli-306770:4966125")
+
+
+
+
     // Runtime only testing mods
     //modRuntimeOnly(forge.worldStripper)
 }
