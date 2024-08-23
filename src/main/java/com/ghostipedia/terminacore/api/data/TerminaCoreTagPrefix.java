@@ -5,8 +5,10 @@ import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
 import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.Conditions.hasOreProperty;
 
 public class TerminaCoreTagPrefix {
+
     public static TagPrefix crushedLeached;
     public static TagPrefix prismaFrothed;
+
     public static void initTagPrefixes() {
         crushedLeached = new TagPrefix("leachedOre")
                 .idPattern("leached_%s_ore")

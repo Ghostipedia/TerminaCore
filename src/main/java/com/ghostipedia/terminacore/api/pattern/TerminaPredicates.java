@@ -1,18 +1,22 @@
 package com.ghostipedia.terminacore.api.pattern;
 
+import com.gregtechceu.gtceu.api.pattern.TraceabilityPredicate;
+import com.gregtechceu.gtceu.api.pattern.error.PatternStringError;
+
+import com.lowdragmc.lowdraglib.utils.BlockInfo;
+
+import net.minecraft.network.chat.Component;
+
 import com.ghostipedia.terminacore.api.TerminaCoreAPI;
 import com.ghostipedia.terminacore.api.block.IMagnetType;
 import com.ghostipedia.terminacore.common.block.MagnetBlock;
-import com.gregtechceu.gtceu.api.pattern.TraceabilityPredicate;
-import com.gregtechceu.gtceu.api.pattern.error.PatternStringError;
-import com.lowdragmc.lowdraglib.utils.BlockInfo;
-import net.minecraft.network.chat.Component;
 
 import java.util.Comparator;
 import java.util.Map;
 import java.util.function.Supplier;
 
 public class TerminaPredicates {
+
     public static TraceabilityPredicate magnetCoils() {
         return new TraceabilityPredicate(blockWorldState -> {
             var blockState = blockWorldState.getBlockState();
@@ -35,6 +39,6 @@ public class TerminaPredicates {
                 .toArray(BlockInfo[]::new))
                 .addTooltips(Component.translatable("gtceu.multiblock.pattern.error.coils"));
     }
-    public static void init() {
-    }
+
+    public static void init() {}
 }

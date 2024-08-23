@@ -50,6 +50,7 @@ dependencyResolutionManagement {
         def mixinextrasVersion = "0.2.0"
         def shimmerVersion = "0.2.4"
         def lombokPluginVersion = "8.7.1"
+        def gtmVersion = "1.4.0"
 
         forge {
             version("forgeShortVersion", forgeVersion)
@@ -110,6 +111,9 @@ dependencyResolutionManagement {
 
             def javd = version("javd", javdVersion)
             library("javd", "curse.maven", "javd-370890").versionRef(javd)
+
+            def gtm = version("gtm", gtmVersion)
+            library("gtm", "com.gregtechceu.gtceu", "gtceu-${minecraftVersion}").versionRef(gtm)
         }
 
         libs {

@@ -1,9 +1,9 @@
 package com.ghostipedia.terminacore.common.data.recipe;
 
-import com.ghostipedia.terminacore.common.data.tag.TagUtil;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
+import com.ghostipedia.terminacore.common.data.tag.TagUtil;
 
 public class RecipeTags {
 

@@ -1,10 +1,11 @@
 package com.ghostipedia.terminacore.mixin;
 
-import com.ghostipedia.terminacore.api.item.armor.SpaceArmorComponentItem;
-import earth.terrarium.adastra.common.items.armor.SpaceSuitItem;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+
+import com.ghostipedia.terminacore.api.item.armor.SpaceArmorComponentItem;
+import earth.terrarium.adastra.common.items.armor.SpaceSuitItem;
 import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -27,5 +28,4 @@ public abstract class AdAstraSpaceSuitItemMixin {
             return suit.getFluidContainer(stack).getFirstFluid().getFluidAmount();
         } else return 0;
     }
-
 }

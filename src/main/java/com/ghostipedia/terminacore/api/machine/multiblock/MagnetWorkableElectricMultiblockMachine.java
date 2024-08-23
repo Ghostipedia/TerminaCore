@@ -1,9 +1,10 @@
 package com.ghostipedia.terminacore.api.machine.multiblock;
 
-import com.ghostipedia.terminacore.api.block.IMagnetType;
-import com.ghostipedia.terminacore.common.block.MagnetBlock;
 import com.gregtechceu.gtceu.api.machine.IMachineBlockEntity;
 import com.gregtechceu.gtceu.api.machine.multiblock.WorkableElectricMultiblockMachine;
+
+import com.ghostipedia.terminacore.api.block.IMagnetType;
+import com.ghostipedia.terminacore.common.block.MagnetBlock;
 import lombok.Getter;
 
 @Getter
@@ -28,10 +29,12 @@ public class MagnetWorkableElectricMultiblockMachine extends WorkableElectricMul
     public int getMagnetStrength() {
         return magnetType.getMagnetFieldCapacity();
     }
+
     public int getMagnetRegen() {
         return magnetType.getMagnetRegenRate();
     }
-    public int getEnergyCost(){
+
+    public int getEnergyCost() {
         return magnetType.energyConsumption();
     }
 }

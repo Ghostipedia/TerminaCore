@@ -10,12 +10,20 @@ plugins {
     alias libs.plugins.lombok
 }
 
+
 apply plugin: "dev.architectury.loom"
 apply plugin: "io.github.juuxel.loom-vineflower"
 apply plugin: "java"
 apply plugin: "architectury-plugin"
 apply plugin: "maven-publish"
 
+repositories {
+    maven { url = "https://maven.firstdarkdev.xyz/snapshots" }
+    // Ad Astra
+    maven {
+        url "https://maven.teamresourceful.com/repository/maven-public/"
+    }
+}
 
 architectury {
     minecraft = libs.versions.minecraft
@@ -49,6 +57,8 @@ machete {
     // disable machete locally for faster builds
     enabled = false
 }
+
+
 
 lombok {
     version = "1.18.32"

@@ -8,5 +8,6 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class TerminaCoreAPI {
+
     public static final Map<IMagnetType, Supplier<MagnetBlock>> MAGNET_COILS = new HashMap<>();
 }
