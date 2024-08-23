@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "cosmiccore:block/casings/coils/living_igniclad_ctm"
+    },
+    "animation":{
+      "interpolate": true,
+      "frametime":3
+   }
+}
