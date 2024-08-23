@@ -26,7 +26,7 @@ loom {
         // specify the mixin configs used in this mod
         // this will be added to the jar manifest as well!
         mixinConfigs = [
-                "cosmiccore.mixins.json"
+                "terminacore.mixins.json"
         ]
 
         // missing access transformers?
@@ -142,15 +142,17 @@ dependencies {
     //modImplementation("com.wayoftime.bloodmagic:BloodMagic:${project.minecraft_version}-${project.blood_magic_version}")
     // modCompileOnly("curse.maven:blood-magic-224791:4779713") // API
     // modRuntimeOnly("curse.maven:blood-magic-224791:4779711") // Runtime to test in game
-    modImplementation("curse.maven:blood-magic-224791:4779711")
+//    modImplementation("curse.maven:blood-magic-224791:4779711")
+    //DEP FOR TESTJARRING
 //    modImplementation("gtceu-1.20.1-1.3.1-build_947.jar")
 
     //modImplementation("curse.maven:cold-sweat-506194:4805548")
     modImplementation('software.bernie.geckolib:geckolib-forge-1.20.1:4.2.2')
-    modCompileOnly("com.jozufozu.flywheel:flywheel-forge-1.20.1:0.6.10-7")
-    modCompileOnly("curse.maven:create-328085:4762216")
+//    modCompileOnly("com.jozufozu.flywheel:flywheel-forge-1.20.1:0.6.10-7")
+//    modCompileOnly("curse.maven:create-328085:4762216")
     modCompileOnly("curse.maven:new-thin-air-878379:4848005")
     modImplementation("curse.maven:puzzles-lib-495476:4924184")
+    modImplementation("curse.maven:terrafirmacraft-302973:5478226")
 
     modRuntimeOnly("curse.maven:jade-324717:4973483")
     modRuntimeOnly("vazkii.patchouli:Patchouli:${project.minecraft_version}-${project.patchouli_version}-FORGE")
