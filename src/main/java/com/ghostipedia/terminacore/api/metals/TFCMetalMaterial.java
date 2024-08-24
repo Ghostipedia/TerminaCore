@@ -22,15 +22,15 @@ public class TFCMetalMaterial {
         GTMaterials.Lead.setProperty(TFC_METAL_PROPERTY,
                 new TFCMetalProperty(TFCTiers.IGNEOUS_EXTRUSIVE.getLevel(), 255, 290, 330, GTMaterials.Lead));
         GTMaterials.Steel.setProperty(TFC_METAL_PROPERTY,
-                new TFCMetalProperty(TFCTiers.WROUGHT_IRON.getLevel(), 924, 1232, 1100, GTMaterials.Steel));
-        GTMaterials.RedSteel.setProperty(TFC_METAL_PROPERTY,
-                new TFCMetalProperty(TFCTiers.STEEL.getLevel(), 258, 300, 350, GTMaterials.RedSteel));
+                new TFCMetalProperty(TFCTiers.WROUGHT_IRON.getLevel(), 924, 1232, 1540, GTMaterials.Steel));
         GTMaterials.Potin.setProperty(TFC_METAL_PROPERTY,
-                new TFCMetalProperty(TFCTiers.BRONZE.getLevel(), 950, 823, 1100, GTMaterials.Potin));
+                new TFCMetalProperty(TFCTiers.STEEL.getLevel(), 258, 300, 350, GTMaterials.Potin));
         GTMaterials.RoseGold.setProperty(TFC_METAL_PROPERTY,
-                new TFCMetalProperty(TFCTiers.STEEL.getLevel(), 576, 768, 960, GTMaterials.RoseGold));
+                new TFCMetalProperty(TFCTiers.BRONZE.getLevel(), 950, 823, 1100, GTMaterials.RoseGold));
         GTMaterials.SterlingSilver.setProperty(TFC_METAL_PROPERTY,
-                new TFCMetalProperty(TFCTiers.STEEL.getLevel(), 570, 760, 893, GTMaterials.SterlingSilver));
+                new TFCMetalProperty(TFCTiers.STEEL.getLevel(), 576, 768, 960, GTMaterials.SterlingSilver));
+        GTMaterials.RedSteel.setProperty(TFC_METAL_PROPERTY,
+                new TFCMetalProperty(TFCTiers.STEEL.getLevel(), 924, 1232, 1540, GTMaterials.RedSteel));
         GTMaterials.BlueSteel.setProperty(TFC_METAL_PROPERTY,
                 new TFCMetalProperty(TFCTiers.BLACK_STEEL.getLevel(), 924, 1232, 1540, GTMaterials.BlueSteel));
         GTMaterials.BlackBronze.setProperty(TFC_METAL_PROPERTY,
