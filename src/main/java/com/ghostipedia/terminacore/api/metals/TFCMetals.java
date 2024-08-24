@@ -1,3 +1,9 @@
 package com.ghostipedia.terminacore.api.metals;
 
-public class TFCMetals {}
+public class TFCMetals {
+
+
+
+
+
+}
