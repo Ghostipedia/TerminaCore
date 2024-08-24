@@ -1,13 +1,17 @@
 package com.ghostipedia.terminacore.api.metals;
 
+import com.gregtechceu.gtceu.common.data.GTMaterials;
 
-import com.gregtechceu.gtceu.api.data.chemical.material.Material;
-import net.dries007.tfc.util.Metal;
+import net.dries007.tfc.common.TFCTiers;
+
+import static com.ghostipedia.terminacore.api.metals.TerminaPropertyKeys.TFC_METAL_PROPERTY;
 
 public class TFCMetalMaterial {
 
-
-    public static void addTFCMetal(Material material) {
-
+    public static void setTFCMetalProperty() {
+        GTMaterials.Aluminium.setProperty(TFC_METAL_PROPERTY,
+                new TFCMetalProperty(TFCTiers.WROUGHT_IRON.getLevel(), 1039, 823, 1243, GTMaterials.Aluminium));
+        GTMaterials.Iron.setProperty(TFC_METAL_PROPERTY,
+                new TFCMetalProperty(TFCTiers.WROUGHT_IRON.getLevel(), 950, 823, 1100, GTMaterials.Iron));
     }
 }
