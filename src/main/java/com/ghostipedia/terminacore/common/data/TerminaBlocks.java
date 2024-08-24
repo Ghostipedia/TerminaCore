@@ -58,7 +58,8 @@ public class TerminaBlocks {
     public static final BlockEntry<CoilBlock> COIL_CAUSAL_FABRIC = createCoilBlock(
             TerminaCoilBlock.CoilType.CAUSAL_FABRIC,
             Platform.isClient() ? new TextureOverrideRenderer(new ResourceLocation("block/cube_all"),
-                    Map.of("all", TerminaCore.id("block/casings/coils/causal_fabric_off"))) : null,null);
+                    Map.of("all", TerminaCore.id("block/casings/coils/causal_fabric_off"))) : null,
+            null);
     public static final BlockEntry<Block> CASING_DYSON_CELL = createCasingBlock("dyson_solar_cell",
             TerminaCore.id("block/casings/solid/dyson_solar_cell"));
     public static final BlockEntry<Block> NAQUADAH_PRESSURE_RESISTANT_CASING = createCasingBlock(

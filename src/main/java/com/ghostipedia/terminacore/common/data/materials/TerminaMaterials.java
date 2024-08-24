@@ -8,6 +8,7 @@ import com.gregtechceu.gtceu.api.fluids.FluidBuilder;
 import com.gregtechceu.gtceu.api.fluids.FluidState;
 
 import com.ghostipedia.terminacore.TerminaCore;
+import com.ghostipedia.terminacore.api.metals.TFCMetalMaterial;
 
 import static com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags.*;
 import static com.gregtechceu.gtceu.common.data.GTMaterials.*;
@@ -264,5 +265,7 @@ public class TerminaMaterials {
                 .liquid(new FluidBuilder().temperature(10))
                 .color(0xdb5e5e).secondaryColor(0x5e0f3d).iconSet(MaterialIconSet.SHINY)
                 .buildAndRegister();
+
+        TFCMetalMaterial.setTFCMetalProperty();
     }
 }
