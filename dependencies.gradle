@@ -8,19 +8,10 @@ dependencies {
 
     forge forge.minecraftForge
 
-    implementation 'com.google.code.findbugs:jsr305:3.0.2'
-
-    // tests
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
-    testImplementation 'io.javalin:javalin:5.4.2'
-    testImplementation 'org.mockito:mockito-core:5.2.0'
-
-
     // From Forge
 
     // LDLib
     modApi(forge.ldlib.forge) { transitive = false }
-    include(forge.ldlib.forge)
 
     // Registrate
     modApi(include("com.tterrag.registrate:Registrate:${forge.versions.registrate.get()}"))
@@ -29,23 +20,10 @@ dependencies {
     modImplementation("com.simibubi.create:create-${libs.versions.minecraft.get()}:${forge.versions.createForge.get()}:all") { transitive = false }
     modImplementation forge.flywheel
 
-    // JEI
-    modCompileOnly(forge.jei.common.api) { transitive = false }
-    modCompileOnly(forge.jei.forge.api) { transitive = false }
-    modCompileOnly(forge.jei.forge.impl) { transitive = false }
-
-    // REI
-    modCompileOnly forge.rei.plugin
-    modCompileOnly forge.rei.api
-    modCompileOnly forge.rei.forge
-
     // EMI
     modCompileOnly("dev.emi:emi-forge:${forge.versions.emi.get()}:api")
 
     modImplementation forge.emi
-
-    // TOP
-    modCompileOnly(forge.theoneprobe) { transitive = false }
 
     // Jade
     modImplementation(forge.jade)
@@ -55,22 +33,15 @@ dependencies {
 
     // AE2
     modImplementation(forge.ae2) { transitive = false }
-    modCompileOnly("curse.maven:ae2wtlib-459929:5217955")
 
     // KJS
     modImplementation forge.kubejs
 
     // Mixin Extras
     implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:${this.forge.versions.mixinextras.get()}"))
-    api(include("io.github.llamalad7:mixinextras-forge:${this.forge.versions.mixinextras.get()}"))
 
     // Configuration
     modApi(forge.configuration)
-    include(forge.configuration)
-
-    // JAVD
-    modImplementation(forge.javd) { transitive = false }
-    modRuntimeOnly("curse.maven:trenzalore-870210:4848244")
 
     // GTM
     modImplementation(forge.gtm)
@@ -81,7 +52,7 @@ dependencies {
     modImplementation("com.teamresourceful.resourcefullib:resourcefullib-forge-${project.minecraft_version}:${project.resourcefullib_version}")
     modImplementation("com.teamresourceful.resourcefulconfig:resourcefulconfig-forge-${project.minecraft_version}:${project.resourcefulconfig_version}")
     modImplementation("earth.terrarium.botarium:botarium-forge-${project.minecraft_version}:${project.botarium_version}")
-    modImplementation("earth.terrarium.adastra:ad_astra-forge-${project.minecraft_version}:${ad_astra_version}") {transitive false} // issue with create mod so not transitive
+    modImplementation("earth.terrarium.adastra:ad_astra-forge-${project.minecraft_version}:${ad_astra_version}") {transitive = false} // issue with create mod so not transitive
 
     // thin air
     modCompileOnly("curse.maven:new-thin-air-878379:4848005")
@@ -89,7 +60,6 @@ dependencies {
 
 
     modImplementation("curse.maven:terrafirmacraft-302973:5571484")
-    modApi("curse.maven:terrafirmacraft-302973:5571484")
     modImplementation("curse.maven:patchouli-306770:4966125")
 
 

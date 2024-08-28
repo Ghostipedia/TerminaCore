@@ -1,8 +1,10 @@
 package com.ghostipedia.terminacore;
 
+import com.ghostipedia.terminacore.integration.tfc.ore.TerminaOres;
 import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialEvent;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.MaterialRegistryEvent;
+import com.gregtechceu.gtceu.api.data.chemical.material.event.PostMaterialEvent;
 import com.gregtechceu.gtceu.api.data.chemical.material.registry.MaterialRegistry;
 import com.gregtechceu.gtceu.api.machine.MachineDefinition;
 import com.gregtechceu.gtceu.api.recipe.GTRecipeType;
@@ -55,6 +57,7 @@ public class TerminaCore {
         ConfigHolder.init();
         TerminaCreativeModeTabs.init();
         TerminaBlocks.init();
+        TerminaOres.init();
         TerminaBlockEntities.init();
         TerminaItems.init();
         TerminaRegistration.REGISTRATE.registerRegistrate();
@@ -75,6 +78,11 @@ public class TerminaCore {
     @SubscribeEvent
     public void registerMaterials(MaterialEvent event) {
         TerminaMaterials.register();
+    }
+
+    @SubscribeEvent
+    public void postRegisterMaterials(PostMaterialEvent event) {
+        TerminaOres.addMaterialProperties();
     }
 
     @SubscribeEvent
